@@ -8,7 +8,7 @@ pipeline{
     environment{
         appName = "variable"
     }
-    stages{
+    stage{
         stage("Paso 1"){
             steps{
                 script{
