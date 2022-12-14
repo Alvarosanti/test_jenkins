@@ -5,11 +5,11 @@ def jsonParse(def json){
 }
 pipeline{
     agent{label 'master'}
-    enviroment{
+    environment{
         appName = "variable"
     }
-    stages{
-        state("Paso 1"){
+    stage{
+        stage("Paso 1"){
             steps{
                 script{
                     sh "echo hello world"
